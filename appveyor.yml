@@ -115,6 +115,3 @@ build_script:
 # variable.
 test_script:
 - cmd: cargo test --verbose
-
-# Deployment is disabled, enable and configure if desired
-deploy: off
