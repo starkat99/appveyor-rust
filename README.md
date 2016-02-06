@@ -17,9 +17,9 @@ builds, making it possible to use custom build scripts to run cargo or rustc bui
 
 `appveyor_rust_install.ps1` uses `channel` and `target` environmnet variables (or command-line
 arguments) to automatically download and install Rust. Only `pc-windows` targets are supported,
-and any Rust distribution channel may be used (stable, beta, or nightly). See the comments in
-`appveyor_rust_install.ps1` and `appveyor.yml` for more details on configuring and installing Rust
-in AppVeyor.
+and any Rust distribution channel may be used (stable, beta, nightly, or a specific version number).
+See the comments in `appveyor_rust_install.ps1` and `appveyor.yml` for more details on configuring
+and installing Rust in AppVeyor.
 
 ## License
 

@@ -1,3 +1,6 @@
+# Appveyor configuration template for Rust
+# https://github.com/starkat99/appveyor-rust
+
 ## Operating System (VM environment) ##
 
 # Rust needs at least Visual Studio 2013 Appveyor OS for MSVC targets.
@@ -9,6 +12,9 @@ os: Visual Studio 2015
 # combinations in all).
 #
 # There are 3 channels: stable, beta, and nightly.
+#
+# Alternatively, the full version may be specified for the channel to build using that specific
+# version (e.g. channel: 1.5.0)
 #
 # The values for target are the set of windows Rust build targets. Each value is of the form
 #
@@ -101,13 +107,6 @@ install:
 # Alternative install command for simple configurations without build matrix (uncomment line and
 # comment above line):
 #- ps: .\appveyor_rust_install.ps1 -channel stable -target x86_64-pc-windows-msvc
-
-## Build Script ##
-
-# Uses 'cargo build' to build. Alternatively, the project may call rustc directly or perform other
-# build commands. Rust will automatically be placed in the PATH environment variable.
-build_script:
-- cmd: cargo build --verbose
 
 ## Build Script ##
 
